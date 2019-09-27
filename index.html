@@ -7,13 +7,17 @@
   <body>
 	<header>
 
-		<h1>Техномарт</h1>
+		<h1 class="visually-hidden">Техномарт</h1>
 
 		<a href="">
 			<img src="img/logo.svg" width="110" height="18" alt="Логотип магазина Technomart">
 		</a>
 
-		<!-- Здесь будет форма поиска -->
+		<form action="#" method="get">
+			<label class="visually-hidden" for="search">Поисковая строка
+				<input type="search" name="search" id="search">
+			</label>
+		</form>
 
 		<ul>
 			<li><a href="">Закладки: </a><span><a href="">0</a></span></li>
@@ -32,8 +36,8 @@
 			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
 			<ul>
-				<li><button type="button">Войти</button></li>
-				<li><button type="button">Регистрация</button></li>
+				<li><a href="#">Войти</a></li>
+				<li><a href="#"Регистрация></a></li>
 			</ul>
 
 		<nav>
@@ -252,7 +256,6 @@
 		</section>
 
 		<section>
-
 			<h2>Компания "Техномарт"</h2>
 			<p>
 				Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и<br>
@@ -269,12 +272,10 @@
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
 
-			<a href="">подробнее о компании</a>
-				
+			<a href="">подробнее о компании</a>			
 		</section>
 
-		<section>
-			
+		<section>			
 			<h2>Контакты</h2>
 
 			<p>
@@ -285,7 +286,33 @@
 			<a href=""><img src="img/map.png" width="300" height="158" alt=""></a>
 
 			<p><a href="">заблудились? напишите нам!</a></p>
+		</section>
 
+		<section>
+			<h2 class="visually-hidden">Карта с адресом</h2>
+			<p>
+				<img src="img/map-big.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+			</p>
+			<button type="button">закрыть</button>
+		</section>
+
+		<section>
+			<h2 class="visually-hidden">Обратная связь</h2>
+			<form action="#" method="post">
+				<label for="your_name">Ваше имя:</label>
+				<input type="text" name="your_name" id="your_name" placeholder="Имя Фамилия">
+
+				<label for="your_email">Ваш e-mail:</label>
+				<input type="email" name="your_email" id="your_email" placeholder="email@examole.com">
+				<p>
+					<label for="text_letter">Текст письма:</label>
+				</p>
+				<p>
+					<textarea name="text_letter" id="text_letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+			    </p>
+				<button type="submit">Отправить</button>
+			</form>
+			<button type="button">Закрыть</button>
 		</section>
 
 	</main>
