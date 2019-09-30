@@ -74,9 +74,15 @@
 
 		<h3>фильтр:</h3>
 
-		<p><label for="band">цена:</label></p>
-		<input type="range" name="band" id="range" min="0" max="35000">
-		<p><span>0</span> - <span>35000</span></p>
+		<div><!-- полоска диапазона --></div>
+		<form action="#" method="get">
+			<label for="min-range" class="visually-hidden">Минимальный диапазон
+				<input type="text" name="min-range" id="min-range" pattern="[0-9]{5}-[0-9]{5}">
+			</label>
+			<label for="max-range" class="visually-hidden">Максимальный диапазон
+				<input type="text" name="max-range" id="max-range" pattern="[0-9]{5}-[0-9]{5}">
+			</label>
+		</form>
 
 		<h3>сортировка:</h3>
 		<ul>
